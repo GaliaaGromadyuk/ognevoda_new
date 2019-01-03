@@ -302,12 +302,12 @@ $('.feedback-main .modal_close').click( function(){
     // filter on page shop
     $('.btn-filter').click(function() {
         $('.filter').toggleClass('openedFilter');
+        $('body').css('overflow', 'hidden');
     });
 
-    $('body').on('click',function(event){
-        if(!$(event.target).is('.btn-filter')){
-          $(".filter").removeClass("openedFilter");
-        }
+    $('.filter_close').on('click',function(){
+      $(".filter").removeClass("openedFilter");
+      $('body').css('overflow', 'auto');
     });
 
     // tabs
