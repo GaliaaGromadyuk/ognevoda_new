@@ -684,6 +684,8 @@ header .container {
     fill: #E51010; }
   .modal_close svg {
     fill: #c4c4c4; }
+    .modal_close svg:hover {
+      fill: #E51010; }
 
 #overlay {
   z-index: 998;
@@ -1607,6 +1609,10 @@ header .container {
   .open-blog .author-data {
     color: #C4C4C4; }
 
+.open-blog .testimonial-btn {
+  -webkit-box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25); }
+
 .open-blog .testimonial-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1663,6 +1669,35 @@ header .container {
       fill: #0A0A0A; }
   .open-blog .testimonial-icon:last-child {
     border-right: none; }
+
+.open-blog .feedback-main {
+  padding: 3rem 7rem;
+  display: block;
+  background: #ffffff;
+  -webkit-box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13);
+          box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13);
+  display: none;
+  position: relative; }
+  .open-blog .feedback-main .feedback-name {
+    width: 50%; }
+  .open-blog .feedback-main textarea {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid #C4C4C4; }
+  .open-blog .feedback-main .btn {
+    width: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2rem;
+    cursor: pointer; }
+    .open-blog .feedback-main .btn-transperent {
+      background: transparent;
+      -webkit-box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13);
+              box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13); }
+      .open-blog .feedback-main .btn-transperent:hover {
+        background: #0A0A0A;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
 
 .open-blog .testimonial-feedback {
   margin-left: 7rem;
@@ -4640,7 +4675,15 @@ header .container {
     margin-left: 1rem;
     right: -2rem; }
   .rozrahunok-door__img {
-    max-height: 12rem; } }
+    max-height: 12rem; }
+  .open-blog .feedback-main {
+    padding: 2rem 3rem; }
+  .open-blog .feedback-main .feedback-name {
+    width: 100%; }
+  .open-blog .testimonial-feedback {
+    margin-left: 3rem; }
+  .open-blog .testimonial-feedback .feedback-name {
+    width: 80%; } }
 
 @media (max-width: 767px) {
   html {

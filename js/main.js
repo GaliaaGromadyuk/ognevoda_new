@@ -185,6 +185,16 @@ $( ".testimonial-icon:first-child" ).click(function() {
   $( this ).parent('div').siblings('.testimonial-feedback').slideToggle();
 });
 
+$( ".testimonial-btn" ).click(function(event) {
+  event.preventDefault();
+  $( '.feedback-main').slideToggle();
+  $('.testimonial-btn').css('display', 'none');
+});
+$('.feedback-main .modal_close').click( function(){
+  $( '.feedback-main').slideToggle();
+  $('.testimonial-btn').css('display', 'inline-block');
+});
+
     $('.slider-big-image').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
